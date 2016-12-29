@@ -1,0 +1,15 @@
+{
+  "uuid": "46806acd-9ed0-4ff2-8944-1488cd9ee42e",
+  "name": "EnumGanzzahlValue",
+  "description": "erzeugt ein Value für einen Ganzzahl Enum",
+  "extraSearchTerms": [
+    "EnumGanzahl"
+  ],
+  "tags": [
+    "ged"
+  ],
+  "code": "/**\r\n * ${bezeichung:var(java.lang.String)}\r\n */\r\n${value:var(java.lang.String)}(${schluessel:var(int)}, \"${bezeichung}\"),\r\n${cursor}\r\n",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

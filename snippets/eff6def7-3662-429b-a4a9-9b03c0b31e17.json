@@ -1,0 +1,15 @@
+{
+  "uuid": "eff6def7-3662-429b-a4a9-9b03c0b31e17",
+  "name": "EnumZeichenketteValue",
+  "description": "erzeugt ein Value für einen Zeichenkette Enum",
+  "extraSearchTerms": [
+    "EnumZeichenkette"
+  ],
+  "tags": [
+    "ged"
+  ],
+  "code": "/**\r\n * ${bezeichung:var(java.lang.String)}\r\n */\r\n${value:var(java.lang.String)}(\"${bezeichung}\", \"${bezeichung}\"),\r\n${cursor}",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}
