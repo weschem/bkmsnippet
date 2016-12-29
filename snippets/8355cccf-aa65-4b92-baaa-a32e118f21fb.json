@@ -1,12 +1,16 @@
 {
   "uuid": "8355cccf-aa65-4b92-baaa-a32e118f21fb",
   "name": "BESSM",
-  "description": "Business Enity Service",
+  "description": "Business Enity Service - legt eine neue Klasse für einen Sub-System-Controller an",
   "extraSearchTerms": [
-    "BESSM"
+    "BESSM",
+    "Sub-System-Controller"
   ],
-  "tags": [],
-  "code": "",
+  "tags": [
+    "ged",
+    "newClass"
+  ],
+  "code": "package ${enclosing_package};\r\n\r\n/* \r\n * Projekt JoKer - Java basiertes, objektorientiertes Kernprojekt \r\n * (c)opyright ${year} Bausparkasse Mainz AG \r\n */ \r\n\r\nimport de.bkm.bes.basis.annotation.Persistence;\r\nimport de.bkm.bes.pm.BkmBesModel;\r\nimport de.jdpe.bof.bos.pm.BesController;\r\nimport de.jdpe.bof.bos.pm.BoFactory;\r\n\r\n/**\r\n * Sub-System-Controller für das ${todo}-System.\u003cbr\u003e\r\n * \u003cbr\u003e\r\n * @author ${user}\r\n * @version $$Log$$\r\n */\r\n@Persistence(false)\r\npublic class ${primary_type_name} extends BkmBesModel\r\n{\r\n  /**\r\n   * Standard-Konstruktor für die Klasse ${primary_type_name} \r\n   */\r\n  public ${primary_type_name}()\r\n  {\r\n    // Nothing\r\n  }\r\n\r\n  /**\r\n   * Konstruktor mit BesController und BoFactory für die Klasse \r\n   * ${primary_type_name}.\u003cbr\u003e\r\n   * \u003cbr\u003e\r\n   * @param aBesController de.jdpe.bof.bos.pm.BesController\r\n   * @param aBoFactory de.jdpe.bof.bos.pm.BoFactory\r\n   */\r\n  public ${primary_type_name}(\r\n    BesController aBesController, BoFactory aBoFactory)\r\n  {\r\n    super(\r\n      aBesController, aBoFactory);\r\n  }\r\n\r\n  ${cursor}\r\n}\r\n\r\n/*\r\n * $$Id$$\r\n */",
   "location": "FILE",
   "filenameRestrictions": [],
   "dependencies": []
