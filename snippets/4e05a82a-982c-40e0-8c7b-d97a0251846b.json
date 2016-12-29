@@ -1,7 +1,7 @@
 {
   "uuid": "4e05a82a-982c-40e0-8c7b-d97a0251846b",
   "name": "Entitaetenrolle",
-  "description": "Entitätenrolle- legt eine neue abstrakte Klasse für eine Entitätenrolle an",
+  "description": "legt eine neue Klasse für die Entitätenrolle eines Business Object an",
   "extraSearchTerms": [
     "Entitätenrolle",
     "Rolle"

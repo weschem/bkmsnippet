@@ -1,12 +1,9 @@
 {
   "uuid": "73873832-34c5-4893-9488-f8ae986f1dae",
-  "name": "BO Spezialisierung",
-  "description": "Business Object Spezialsierung- legt eine neue Klasse für die Spezialisierung eines Business Object an",
+  "name": "Spezialisierung",
+  "description": "legt eine neue Klasse für die Spezialisierung eines Business Object an",
   "extraSearchTerms": [
-    "BO",
-    "BO Spezialisierung",
-    "Business Object",
-    "Business Object Spezialsierung"
+    "Spezialisierung"
   ],
   "tags": [
     "ged",
