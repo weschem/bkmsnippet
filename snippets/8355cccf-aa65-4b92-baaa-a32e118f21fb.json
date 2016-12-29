@@ -1,0 +1,13 @@
+{
+  "uuid": "8355cccf-aa65-4b92-baaa-a32e118f21fb",
+  "name": "BESSM",
+  "description": "Business Enity Service",
+  "extraSearchTerms": [
+    "BESSM"
+  ],
+  "tags": [],
+  "code": "",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}
