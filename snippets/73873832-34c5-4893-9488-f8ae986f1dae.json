@@ -1,0 +1,19 @@
+{
+  "uuid": "73873832-34c5-4893-9488-f8ae986f1dae",
+  "name": "BO Spezialisierung",
+  "description": "Business Object Spezialsierung- legt eine neue Klasse für die Spezialisierung eines Business Object an",
+  "extraSearchTerms": [
+    "BO",
+    "BO Spezialisierung",
+    "Business Object",
+    "Business Object Spezialsierung"
+  ],
+  "tags": [
+    "ged",
+    "newClass"
+  ],
+  "code": "package ${enclosing_package};\r\n\r\n/* \r\n * Projekt JoKer - Java basiertes, objektorientiertes Kernprojekt \r\n * (c)opyright ${year} Bausparkasse Mainz AG \r\n */\r\nimport de.bkm.bes.basis.annotation.Indexing;\r\nimport de.bkm.bes.basis.annotation.IndexingType;\r\nimport de.bkm.bes.basis.annotation.Persistence;\r\nimport de.jdpe.bof.bo.eh.BoException;\r\nimport de.jdpe.bof.bo.pm.BoId;\r\nimport de.jdpe.bof.bo.pm.BoInterface;\r\nimport de.jdpe.bof.bo.pm.TaskServerControllerInterface;\r\n\r\n/**\r\n * Business Object ${primary_type_name}.\u003cbr\u003e\r\n * Stellt eine Spezialisierung der Klasse ${topLevelClass:var(java.lang.String)} dar.\u003cbr\u003e\r\n * ${todo}\r\n * \u003cbr\u003e\r\n * @author ${user}\r\n * @version $$Log$$\r\n */\r\n@Persistence(true)\r\npublic class ${primary_type_name} extends ${topLevelClass}\r\n{\r\n\r\n  /**\r\n   * Standard-Konstruktor für die Klasse ${primary_type_name}\r\n   */\r\n  public ${primary_type_name}()\r\n  {\r\n    super();\r\n  }\r\n\r\n  /**\r\n   * Konstruktor mit BoId für die Klasse ${primary_type_name}\r\n   * @param aBoId BoId der Klasse\r\n   */\r\n  public ${primary_type_name}(BoId aBoId)\r\n  {\r\n    super(aBoId);\r\n  }\r\n}\r\n\r\n/*\r\n * $$Log$$\r\n */",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}
