@@ -1,0 +1,17 @@
+{
+  "uuid": "d05fcbb2-0234-4be7-9c81-f403a2a0f761",
+  "name": "RemoteProxy Interface",
+  "description": "legt eine neue Klasse für ein RemoteProxy Interface an",
+  "extraSearchTerms": [
+    "RemoteProxy Interface",
+    "Interface"
+  ],
+  "tags": [
+    "ged",
+    "newClass"
+  ],
+  "code": "package ${enclosing_package};\r\n\r\n/* \r\n * Projekt JoKer - Java basiertes, objektorientiertes Kernprojekt \r\n * (c)opyright ${year} Bausparkasse Mainz AG \r\n */ \r\nimport de.bkm.bes.basis.role.BoIRemoteProxy;\r\n\r\n/**\r\n * RemoteProxy-Interface  ${primary_type_name} \r\n * des Business Objects ${entitaet:var(java.lang.String)} zur Verwendung\r\n * der Entität in anderen Subsystemen.\u003cbr\u003e\r\n * \u003cbr\u003e\r\n *  @author ${user}\r\n *  @version $$Id$$\r\n */\r\npublic interface ${primary_type_name} extends BoIRemoteProxy\r\n{\r\n\t${todo}\r\n}\r\n\r\n/*\r\n * $$Log$$\r\n */",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

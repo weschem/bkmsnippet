@@ -1,0 +1,17 @@
+{
+  "uuid": "4de84161-ef3e-4587-8896-135d6852c399",
+  "name": "Handle Interface",
+  "description": "legt eine neue Klasse für ein Handle Interface an",
+  "extraSearchTerms": [
+    "Handle Interface",
+    "Interface"
+  ],
+  "tags": [
+    "ged",
+    "newClass"
+  ],
+  "code": "package ${enclosing_package};\r\n\r\n/* \r\n * Projekt JoKer - Java basiertes, objektorientiertes Kernprojekt \r\n * (c)opyright ${year} Bausparkasse Mainz AG \r\n */ \r\nimport de.jdpe.bof.bo.pm.BoInterface;\r\n\r\n/**\r\n * Handle Interface des Business Objects ${entitaet:var(java.lang.String)} zur Verwendung\r\n * der Entität in anderen Subsystemen.\u003cbr\u003e\r\n * \u003cbr\u003e\r\n *  @author ${user}\r\n *  @version $$Id$$\r\n */\r\npublic interface ${primary_type_name} extends BoInterface \r\n{\r\n  // Ein Handle besitzt kein besonderes Verhalten.\r\n}\r\n\r\n/*\r\n * $$Log$$\r\n */",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}
