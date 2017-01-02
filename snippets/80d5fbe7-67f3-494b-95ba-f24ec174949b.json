@@ -1,0 +1,15 @@
+{
+  "uuid": "80d5fbe7-67f3-494b-95ba-f24ec174949b",
+  "name": "Fassadenmethode Attribut",
+  "description": "legt eine Gib- und Setze-Methode für einen Attribut an",
+  "extraSearchTerms": [
+    "Fassade Methode"
+  ],
+  "tags": [
+    "dienste"
+  ],
+  "code": "${:import(de.bkm.bes.basis.annotation.ServiceScope, de.bkm.bes.basis.annotation.ServiceScopeType)}\r\n\r\n/**\r\n * liefert ${FieldName:var(java.lang.String)}\r\n * vom Typ ${Type:var(java.lang.String)}\r\n *\r\n * @return ${Type}  Attribut ${FieldName}\r\n */\r\n@ServiceScope(ServiceScopeType.ALL)\r\npublic ${Type}  gib${FieldName}() {\r\n\treturn gibBusinessObject().gib${FieldName}();\r\n}\r\n\r\n/**\r\n * setzt ${FieldName} vom Typ ${Type}\r\n *\r\n * @param a${FieldName} ${Type}  \r\n */\r\n@ServiceScope(ServiceScopeType.ALL)\r\npublic void setze${FieldName}(${Type}  a${FieldName}) {\r\n  gibBusinessObject().setze${FieldName}(a${FieldName});\r\n}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "filenameRestrictions": [],
+  "dependencies": []
+}
