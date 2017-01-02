@@ -1,0 +1,16 @@
+{
+  "uuid": "00f3db1b-b8b0-460a-aa04-f7d357ff9962",
+  "name": "long",
+  "description": "legt die notwendigen Attribute für einen long an",
+  "extraSearchTerms": [
+    "long"
+  ],
+  "tags": [
+    "ged",
+    "attribute"
+  ],
+  "code": "\u003c${:import(de.bkm.bes.basis.annotation.Indexing, de.bkm.bes.basis.annotation.IndexingType)}\r\n\r\n/**\r\n  * long ${AttributeName:var(java.lang.String)} : ${attributeName:var(java.lang.String)}\r\n  * ${todo}\r\n  */\r\n@Indexing(IndexingType.NO_INDEX)\r\nprivate long ${attributeName} \u003d 0;\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n * @see #${attributeName}\r\n */\r\npublic long get${AttributeName}()\r\n{\r\n  return this.${attributeName};\r\n}\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n * @see #${attributeName}\r\n */\r\npublic long gib${AttributeName}()\r\n{\r\n\treturn get${AttributeName}();\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}\r\n *\r\n * @param aValue Wert der gesetzt werden soll\r\n * @see #${attributeName}\r\n */\r\npublic void set${AttributeName}(long aValue)\r\n{\r\n  this.${attributeName} \u003d aValue;\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}.\r\n *\r\n * @param aValue Wert der gesetzt werden soll\r\n * @see #${attributeName}\r\n */\r\npublic void setze${AttributeName}(final long aValue)\r\n{\r\n\tset${AttributeName}(aValue);\r\n}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

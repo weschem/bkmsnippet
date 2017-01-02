@@ -1,0 +1,16 @@
+{
+  "uuid": "8b83fadb-5bb8-4889-ac0b-eaae4e4b8826",
+  "name": "String",
+  "description": "legt die notwendigen Attribute für einen String an",
+  "extraSearchTerms": [
+    "String"
+  ],
+  "tags": [
+    "ged",
+    "attribute"
+  ],
+  "code": "${:import(java.lang.String,  de.bkm.bes.basis.annotation.DBFieldLength, de.bkm.bes.basis.annotation.Indexing, de.bkm.bes.basis.annotation.IndexingType)}\r\n\r\n/**\r\n  * String ${AttributeName:var(java.lang.String)} : ${attributeName:var(java.lang.String)}\r\n  * ${todo}\r\n  */\r\n@DBFieldLength(value \u003d 50)\r\n@Indexing(IndexingType.NO_INDEX)\r\nprivate String ${attributeName} \u003d null;\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n * @see #${attributeName}\r\n */\r\npublic String get${AttributeName}()\r\n{\r\n  return this.${attributeName};\r\n}\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n * @see #${attributeName}\r\n */\r\npublic String gib${AttributeName}()\r\n{\r\n\treturn get${AttributeName}();\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}.\r\n *\r\n * @param aValue Wert der gesetzt werden soll\r\n * @see #${attributeName}\r\n*/\r\npublic void set${AttributeName}(final String aValue)\r\n{\r\n  this.${attributeName} \u003d aValue;\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}.\r\n *\r\n * @param aValue Wert der gesetzt werden soll\r\n * @see #${attributeName}\r\n */\r\npublic void setze${AttributeName}(final String aValue)\r\n{\r\n\tset${AttributeName}(aValue);\r\n}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

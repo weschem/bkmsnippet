@@ -1,0 +1,16 @@
+{
+  "uuid": "05a5d308-4231-4693-b1fd-445793497787",
+  "name": "BigDecimal",
+  "description": "legt die notwendigen Attribute für ein BigDecimal an",
+  "extraSearchTerms": [
+    "BigDecimal"
+  ],
+  "tags": [
+    "ged",
+    "attribute"
+  ],
+  "code": "${:import(java.math.BigDecimal, de.bkm.bes.basis.annotation.DBFieldLength, de.bkm.bes.basis.annotation.Indexing, de.bkm.bes.basis.annotation.IndexingType)}\r\n\r\n/**\r\n  * BigDecimal  ${AttributeName:var(java.lang.String)} : ${attributeName:var(java.lang.String)}\r\n  * ${todo}\r\n  */\r\n@DBFieldLength(value \u003d 28, decimalplace \u003d 4)\r\n@Indexing(IndexingType.NO_INDEX)\r\nprivate BigDecimal ${attributeName} \u003d null;\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n * @see #${attributeName}\r\n */\r\npublic BigDecimal get${AttributeName}()\r\n{\r\n  return this.${attributeName};\r\n}\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n */\r\npublic BigDecimal gib${AttributeName}()\r\n{\r\n\treturn get${AttributeName}();\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}.\r\n *\r\n * @param aValue Wert der gesetzt werden soll\r\n * @see #${attributeName}\r\n */\r\npublic void set${AttributeName}(final BigDecimal aValue)\r\n{\r\n  this.${attributeName} \u003d aValue;\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}.\r\n *\r\n * @param aValue Wert der gesetzt werden soll\r\n */\r\npublic void setze${AttributeName}(final BigDecimal aValue)\r\n{\r\n\tset${AttributeName}(aValue);\r\n}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

@@ -1,0 +1,16 @@
+{
+  "uuid": "8e987361-f0ff-4c45-a074-4694b57cbb05",
+  "name": "boolean",
+  "description": "legt die notwendigen Attribute für einen boolean an",
+  "extraSearchTerms": [
+    "boolean"
+  ],
+  "tags": [
+    "ged",
+    "attribute"
+  ],
+  "code": "${:import(de.bkm.bes.basis.annotation.Indexing, de.bkm.bes.basis.annotation.IndexingType)}\r\n\r\n/**\r\n  * boolean  ${AttributeName:var(java.lang.String)} : ${attributeName:var(java.lang.String)}\r\n  * ${todo}\r\n  */\r\n@Indexing(IndexingType.NO_INDEX)\r\nprivate boolean ${attributeName} \u003d false;\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n * @see #${attributeName}\r\n */\r\npublic boolean get${AttributeName}() \r\n{\r\n\treturn this.${attributeName};\r\n}\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n * @see #${attributeName}\r\n */\r\npublic boolean ist${AttributeName}()\r\n{\r\n\treturn get${AttributeName}();\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}.\r\n *\r\n * @param aValue Wert der gesetzt werden soll \r\n * @see #${attributeName}\r\n */\r\npublic void set${AttributeName}(boolean aValue)\r\n{\r\n\tthis.${attributeName} \u003d aValue;\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}.\r\n *\r\n * @param aValue Wert der gesetzt werden soll\r\n * @see #${attributeName}\r\n */\r\npublic void setze${AttributeName}(final boolean aValue)\r\n{\r\n\tset${AttributeName}(aValue);\r\n}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "filenameRestrictions": [],
+  "dependencies": []
+}
