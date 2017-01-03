@@ -1,7 +1,7 @@
 {
   "uuid": "91b7864b-8409-4b6f-b16d-a1b2d75500c3",
   "name": "Ereignisfaehig",
-  "description": "",
+  "description": "erzeugt die notwendigen Attribute und Methoden um ein Business Object ereignisfähig zu machen",
   "extraSearchTerms": [
     "Ereignisfähig",
     "Ereignis"
