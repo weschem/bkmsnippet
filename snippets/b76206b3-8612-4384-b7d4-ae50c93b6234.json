@@ -1,0 +1,17 @@
+{
+  "uuid": "b76206b3-8612-4384-b7d4-ae50c93b6234",
+  "name": "Enum (int)",
+  "description": "legt die notwendigen Attribute für einen EnumGanzzahl (int) an",
+  "extraSearchTerms": [
+    "int",
+    "EnumGanzzahl"
+  ],
+  "tags": [
+    "ged",
+    "attribute"
+  ],
+  "code": "\u003c${:import(de.bkm.bes.basis.annotation.Indexing, de.bkm.bes.basis.annotation.IndexingType)}\r\n\r\n/**\r\n  * ${EnumGanzzahl:var(java.lang.String)}\r\n  * ${AttributeName:var(java.lang.String)} : ${attributeName:var(java.lang.String)}\r\n  * ${todo}\r\n  */\r\n@Indexing(IndexingType.NO_INDEX)\r\nprivate int ${attributeName} \u003d 0;\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n * @see #${attributeName}\r\n */\r\npublic int get${AttributeName}()\r\n{\r\n  return this.${attributeName};\r\n}\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n */\r\npublic ${EnumGanzzahl} gib${AttributeName}()\r\n{\r\n\treturn ${EnumGanzzahl}.gibEnumZuSchluessel(get${AttributeName}());\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}\r\n *\r\n * @param aValue Wert der gesetzt werden soll\r\n * @see #${attributeName}\r\n */\r\npublic void set${AttributeName}(int aValue)\r\n{\r\n  this.${attributeName} \u003d aValue;\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}.\r\n *\r\n * @param aValue Wert der gesetzt werden soll\r\n */\r\npublic void setze${AttributeName}(final ${EnumGanzzahl} aValue)\r\n{\r\n\tset${AttributeName}(aValue !\u003d null\r\n      ? aValue.gibSchluessel()\r\n      : 0);\r\n}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

@@ -1,0 +1,17 @@
+{
+  "uuid": "34ecbacd-7e8e-4764-a286-f6694c1cfc69",
+  "name": "Enum (String)",
+  "description": "legt die notwendigen Attribute für einen EnumZeichenkette (String) an",
+  "extraSearchTerms": [
+    "String",
+    "EnumZeichenkette"
+  ],
+  "tags": [
+    "ged",
+    "attribute"
+  ],
+  "code": "${:import(java.lang.String,  de.bkm.bes.basis.annotation.DBFieldLength, de.bkm.bes.basis.annotation.Indexing, de.bkm.bes.basis.annotation.IndexingType)}\r\n\r\n/**\r\n  * ${EnumZeichenkette:var(java.lang.String)}\r\n  * ${AttributeName:var(java.lang.String)} : ${attributeName:var(java.lang.String)}\r\n  * ${todo}\r\n  */\r\n@DBFieldLength(value \u003d 50)\r\n@Indexing(IndexingType.NO_INDEX)\r\nprivate String ${attributeName} \u003d null;\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n * @see #${attributeName}\r\n */\r\npublic String get${AttributeName}()\r\n{\r\n  return this.${attributeName};\r\n}\r\n\r\n/**\r\n * Gibt das Attribut ${attributeName} zurück.\r\n *\r\n * @return ${attributeName}\r\n */\r\npublic ${EnumZeichenkette} gib${AttributeName}()\r\n{\r\n\treturn ${EnumZeichenkette}.gibEnumZuSchluessel(get${AttributeName}());\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}.\r\n *\r\n * @param aValue Wert der gesetzt werden soll\r\n * @see #${attributeName}\r\n*/\r\npublic void set${AttributeName}(final String aValue)\r\n{\r\n  this.${attributeName} \u003d aValue;\r\n}\r\n\r\n/**\r\n * Setzt das Attribut ${attributeName}.\r\n *\r\n * @param aValue Wert der gesetzt werden soll\r\n */\r\npublic void setze${AttributeName}(final ${EnumZeichenkette} aValue)\r\n{\r\n\tset${AttributeName}(aValue !\u003d null\r\n      ? aValue.gibSchluessel()\r\n      : null);\r\n}",
+  "location": "JAVA_TYPE_MEMBERS",
+  "filenameRestrictions": [],
+  "dependencies": []
+}
