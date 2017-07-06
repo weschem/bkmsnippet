@@ -1,0 +1,14 @@
+{
+  "uuid": "18b9ed16-63f3-41ff-93ef-babbae067d1e",
+  "name": "Log footer",
+  "description": "Footer für bkm cvs log",
+  "extraSearchTerms": [
+    "log",
+    "footer"
+  ],
+  "tags": [],
+  "code": "/*\r\n * $$Log$$\r\n */",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}
